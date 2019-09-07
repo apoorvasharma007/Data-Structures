@@ -18,10 +18,11 @@ public class Stack
 		{	
 			top++;
 			stackarray[top]=number;
-	    }
-	    else
-	    	System.out.println("Stack is full");
+	    	}
+	    	else
+	    		System.out.println("Stack is full");
 	}
+	
 	public int pop()
 	{   
 		if(top>-1) 
@@ -36,6 +37,7 @@ public class Stack
 			return -1;
 		}
 	}
+	
 	public void peek() // will show the the values on the stack 
 	{   
 		if(top>-1)
@@ -47,13 +49,15 @@ public class Stack
 			System.out.println("");// just to add new line
 		} 
 	}
+	
 	public void top() // returns top and the value on the top
 	{   
 		if(top>-1)
-		System.out.println("top="+top+" and value="+stackarray[top]);
+			System.out.println("top="+top+" and value="+stackarray[top]);
 		else
 			System.out.println("stack empty so top is "+ top);
 	}
+	
 	public int size()
 	{
 		return top+1; // number of elements on stack
